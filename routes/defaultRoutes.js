@@ -11,13 +11,13 @@ router.get("/donations/:id", (req, res)=>{
    })
 });
 
-router.get("/donations", (req, res)=>{
+router.get("/donations", (_, res)=>{
    database.getDonations(null, donations=>{
         res.status(200).send(donations);
    });
 });
 
-router.get("/", (req, res)=>{
+router.get("/", (_, res)=>{
     res.status(200).sendFile(path.join(__dirname,'../public', '/index.html'));
 });
 
@@ -27,16 +27,20 @@ router.get("/delete_donation/:id", (req, res)=>{
     });
 });
 
-router.get("/delete_all_donations", (req, res)=>{
+router.get("/delete_all_donations", (_, res)=>{
    database.deleteAllDonations(result=>{
        res.status(200).send(result);
    });
 });
 
 router.post("/create_donation", (req, res)=>{
-  database.createDonation(req.body, (result)=>{
-      res.status(201).send(result);
-  })
+  if(Object.keys(req.body).length < 1){
+     req.status(400).send({"details": "request body is empty"});
+  }else{
+        database.createDonation(req.body, (result)=>{
+            res.status(201).send(result);
+        })
+    }
 });
 
 module.exports = router;

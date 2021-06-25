@@ -55,10 +55,10 @@ If you are interested in running the e2e tests, you need to setup the applicatio
 npm install
 ```
 
-3.  Setup mysql on your localmachine, making sure that the username 'root' with a password of 'root' exists and that you can
+3.  Setup mysql on your local machine, making sure that the username 'root' with a password of 'root' exists and that you can
     log into mysql with these. Also ensure that a database named "mysql" exists or else the application won't start. (
     This link will be of help https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/
-    )
+    ). Don't forget to change "hostname" in the databaseAPI.js from "database" to "localhost".
 
 4.  Run "npm start" to start the application.
 5.  To run e2e test, run "npm run e2e"
