@@ -6,7 +6,7 @@
 2. clone the repositiory from github.
 3. run docker-compose up.
 
-### Install docker and docker compose
+### Install docker and docker-compose
 
 (you can skip this step if you already have docker and docker-compose installed)
 
@@ -17,7 +17,7 @@
 1. run the command
 
 ```commandline
-git clone <github repository url>
+git clone https://github.com/NdibeRaymond/wiki_donate
 ```
 
 ### Run docker-compose up
