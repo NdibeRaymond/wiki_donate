@@ -4,12 +4,36 @@
     const confirmation = document.querySelector("#confirmation");
     confirmation.innerHTML = "";
 
+    const h1 = document.createElement("h1");
+    h1.classList.add("confirmation-title");
+    h1.innerText = "Donation Confirmation"
+
     const confirmationSummary = document.createElement("div");
-    const totalYearlyDonation = document.createElement("div");
+    confirmationSummary.classList.add("confirmation-summary");
+    confirmationSummary.appendChild(h1);
+
+    const totalYearlyDonation = document.createElement("h2");
+    totalYearlyDonation.classList.add("total-yearly-donation");
 
     const confirmButton = document.createElement("button");
+    confirmButton.classList.add("confirm");
+
     const cancelButton = document.createElement("button");
+    cancelButton.classList.add("cancel");
+
     const editButton = document.createElement("button");
+    editButton.classList.add("edit");
+
+    const buttonContainer = document.createElement("div");
+    buttonContainer.classList.add("button-container")
+    buttonContainer.appendChild(confirmButton);
+    buttonContainer.appendChild(cancelButton);
+    buttonContainer.appendChild(editButton);
+
+    const container = document.createElement("div");
+    container.classList.add("container");
+    container.appendChild(totalYearlyDonation);
+    container.appendChild(buttonContainer);
 
     confirmButton.innerText = "Confirm";
     cancelButton.innerText = "Cancel";
@@ -65,10 +89,10 @@
     });
 
     confirmation.appendChild(confirmationSummary);
-    confirmation.appendChild(totalYearlyDonation);
-    confirmation.appendChild(confirmButton);
-    confirmation.appendChild(editButton);
-    confirmation.appendChild(cancelButton);
+    confirmation.appendChild(container);
+    // confirmation.appendChild(confirmButton);
+    // confirmation.appendChild(editButton);
+    // confirmation.appendChild(cancelButton);
 }
 
 

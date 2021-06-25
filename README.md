@@ -62,3 +62,12 @@ npm install
 
 4.  Run "npm start" to start the application.
 5.  To run e2e test, run "npm run e2e"
+
+## Endpoints:
+
+1.  "http:/localhost:3000/donations/:id" GET
+2.  "http://localhost:3000/donations" GET
+3.  "http://localhost:3000" GET
+4.  "http://localhost:3000/delete_donation/:id" GET
+5.  "http://localhost:3000/delete_all_donations" GET
+6.  "http://localhost:3000/create_donation" POST

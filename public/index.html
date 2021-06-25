@@ -9,52 +9,52 @@
 </head>
 <body>
 <form id="form">
-    <h1>Donate To Our Mission!</h1>
-    <label>
+    <h1 class="single">Donate To Our Mission!</h1>
+    <label class="double">
         <h3>First Name</h3>
         <input name="first_name" id="first_name" type="text" maxlength=50 required  placeholder="First Name...">
     </label>
-    <label>
+    <label class="double">
         <h3>Last Name</h3>
         <input name="last_name" id="last_name" type="text" maxlength=50 required  placeholder="Last Name...">
     </label>
-    <label>
+    <label class="double">
         <h3>Street Address</h3>
         <input name="street_address" id="street_address" type="text" maxlength=500 required  placeholder="Stree Address...">
     </label>
-    <label>
+    <label class="double">
         <h3>City</h3>
         <input name="city" id="city" type="text" maxlength=50 required  placeholder="City...">
     </label>
-    <label>
+    <label class="double">
         <h3>State</h3>
         <input name="state" id="state" type="text" maxlength=50 required  placeholder="State...">
     </label>
-    <label>
+    <label class="double">
         <h3>Country</h3>
         <select name="country" id="country">
         </select>
     </label>
-    <label>
+    <label class="double">
         <h3>Postal Code</h3>
         <input name="postal_code" id="postal_code" maxlength=10 required  type="text" placeholder="Postal Code...">
-    </label>
-    <label>
+    </label class="double">
+    <label class="double">
         <h3>Phone</h3>
         <input name="phone_number" id="phone_number" maxlength=20 required  type="tel" placeholder="Phone Number...">
     </label>
-    <label>
+    <label class="double">
         <h3>Email</h3>
         <input name="email" id="email" required maxlength=255 required   type="email" placeholder="Email Address...">
     </label>
-    <label>
+    <label class="double">
         <h3>Contact By</h3>
         <select name="preferred_form_of_contact" id="preferred_form_of_contact">
             <option value="email">Email</option>
             <option value="phone">Phone</option>
           </select>
     </label>
-    <label>
+    <label class="double">
         <h3>Donation Currency</h3>
         <select name="preferred_form_of_payment" id="preferred_form_of_payment">
             <option value="USD">USD</option>
@@ -62,7 +62,7 @@
             <option value="Bitcoin">Bitcoin</option>
           </select>
     </label>
-    <label>
+    <label class="double">
         <h3>Donation Frequency</h3>
         <select name="frequency_of_donation" id="frequency_of_donation">
             <option value="Monthly">Monthly</option>
@@ -70,24 +70,24 @@
             <option value="One-time">One-time</option>
           </select>
     </label>
-    <label>
+    <label class="double">
         <h3>Donation Amount</h3>
         <input name="amount_of_donation" required 
         id="amount_of_donation" type="number" placeholder="Amount...">
     </label>
-    <label>
+    <label class="single">
         <h3>Comments</h3>
         <textarea name="comments" id="comments" rows="3" 
         maxlength=1000 required placeholder="Comments..."></textarea>
     </label>
-    <button id="submit">Submit</button>
+    <button class="single" id="submit">Submit</button>
 </form>
 
 <section id="confirmation" class="hidden">
 </section>
 
 <section id="thanks" class="hidden">
-    <h1>Thank you for choosing to donate to Wikimedia, we want you to know we appreciate your 
+    <h1>Thank you for choosing to donate to Wikimedia. We want you to know we appreciate your 
         effort to help create a world in which every single person on the planet is given free access to the sum of all human knowledge.
         We will be in-touch with you
     </h1>

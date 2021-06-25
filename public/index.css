@@ -1,3 +1,110 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbfbfb;
+  height: 100vh;
+}
+
+#form {
+  display: flex;
+  border-radius: 20px;
+  max-width: 500px;
+  flex-wrap: wrap;
+  padding: 2em;
+  background-color: white;
+  margin: 5em 0;
+}
+
+.single {
+  width: 100%;
+}
+
+.double {
+  width: 50%;
+}
+
+input,
+textarea,
+select {
+  width: 95%;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+input,
+select {
+  height: 2em;
+}
+
+#submit {
+  width: 95%;
+  height: 3em;
+  border-radius: 10px;
+  margin-top: 1.5em;
+  cursor: pointer;
+}
+
+#confirmation {
+  padding: 2em;
+  max-width: 900px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.confirmation-title {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.button-container {
+  width: 100%;
+}
+
+.button-container button {
+  height: 2.5em;
+  margin: 0 1em;
+  border-radius: 10px;
+}
+
+#thanks,
+#sorry {
+  border-radius: 20px;
+  background-color: white;
+  padding: 2em;
+  max-width: 900px;
+  align-self: center;
+}
+
+@media only screen and (max-width: 430px) {
+  .double {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 653px) {
+  #confirmation {
+    flex-direction: column;
+  }
+
+  .button-container button {
+    margin: 0 0.3em;
+  }
+}
+
 .hidden {
-  display: none;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  position: absolute;
 }
