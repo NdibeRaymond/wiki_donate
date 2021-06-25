@@ -65,7 +65,7 @@ npm install
 
 ## Endpoints:
 
-1.  "http:/localhost:3000/donations/:id" GET
+1.  "http://localhost:3000/donations/:id" GET
 2.  "http://localhost:3000/donations" GET
 3.  "http://localhost:3000" GET
 4.  "http://localhost:3000/delete_donation/:id" GET
