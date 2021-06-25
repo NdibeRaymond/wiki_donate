@@ -11,6 +11,12 @@ router.get("/donations/:id", (req, res)=>{
    })
 });
 
+router.get("/donations_by_firstname/:first_name", (req, res)=>{
+    database.getDonationsByFirstName(req.params.first_name, donations=>{
+        res.status(200).send(donations);
+    });
+ });
+
 router.get("/donations", (_, res)=>{
    database.getDonations(null, donations=>{
         res.status(200).send(donations);
@@ -23,6 +29,12 @@ router.get("/", (_, res)=>{
 
 router.get("/delete_donation/:id", (req, res)=>{
     database.deleteDonation(req.params.id, result=>{
+        res.status(200).send(result);
+    });
+});
+
+router.get("/delete_by_firstname/:first_name", (req, res)=>{
+    database.deleteDonationsByFirstName(req.params.first_name, result=>{
         res.status(200).send(result);
     });
 });

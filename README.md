@@ -28,13 +28,14 @@ git clone https://github.com/NdibeRaymond/wiki_donate
 docker-compose up -d --build
 ```
 
-2. The project should be up and running by. Visit http://localhost:3000 to get started
+2. The project should be up and running. Visit http://localhost:3000 to get started.
 
 ## Steps to run tests:
 
 ### Integration tests
 
-1. While the docker containers are still up, run:
+1. While the docker containers are still up,
+   run the following command in the directory with your docker-compose file:
 
 ```commandline
 docker-compose exec express bash
@@ -67,7 +68,9 @@ npm install
 
 1.  "http://localhost:3000/donations/:id" GET
 2.  "http://localhost:3000/donations" GET
-3.  "http://localhost:3000" GET
-4.  "http://localhost:3000/delete_donation/:id" GET
-5.  "http://localhost:3000/delete_all_donations" GET
-6.  "http://localhost:3000/create_donation" POST
+3.  "http://localhost:3000/donations_by_firstname/:first_name GET
+4.  "http://localhost:3000" GET
+5.  "http://localhost:3000/delete_donation/:id" GET
+6.  "http://localhost:3000/delete_by_firstname/:first_name" GET
+7.  "http://localhost:3000/delete_all_donations" GET
+8.  "http://localhost:3000/create_donation" POST
