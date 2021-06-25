@@ -2,8 +2,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fbfbfb;
-  height: 100vh;
+  background-color: #ebebeb;
+  min-height: 100vh;
 }
 
 #form {
@@ -47,6 +47,7 @@ select {
 
 #confirmation {
   padding: 2em;
+  margin: 5em 0;
   max-width: 900px;
   border-radius: 20px;
   background-color: white;
@@ -84,6 +85,7 @@ select {
   padding: 2em;
   max-width: 900px;
   align-self: center;
+  margin: 5em 0;
 }
 
 @media only screen and (max-width: 430px) {
